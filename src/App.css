@@ -1,11 +1,8 @@
 .App {
   text-align: center;
+  background: rgb(32, 55, 78);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -14,19 +11,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color:rgb(54, 88, 122);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+    font-size: calc(10px + 2vmin);
+  color: aliceblue;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +27,52 @@
   to {
     transform: rotate(360deg);
   }
+}
+.item-details{
+  display: flex;
+  flex-direction: column;
+}
+
+.all-item{
+  padding: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 50px 50px;
+  justify-content: space-evenly;
+}
+
+.MuiBox-root-6 {
+  border-color: transparent;
+  margin-bottom: -20px;
+}
+
+.item-name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(12, 12, 136);
+  font-size: larger;
+  margin: 3%;
+}
+
+.discountRate{
+  color: rgb(71, 69, 69);
+  text-decoration: line-through;
+}
+
+.rate{
+  font-size: 23px;
+  font-weight: bold;
+}
+.item-list{
+  padding: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 50px 50px;
+  justify-content: space-evenly;
+}
+
+a{
+  color: aliceblue;
+  text-decoration: none;
 }
