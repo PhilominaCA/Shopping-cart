@@ -8,7 +8,6 @@ export function Items({ photo, itemName, rating, discountRate, rate,addButton,de
   const useStyles = makeStyles({
     root: {
       maxWidth: 305,
-      backgroundColor: "rgb(118, 206, 209)",
       padding: 4,
     },
     media: {

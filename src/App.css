@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background: rgb(32, 55, 78);
 }
 
 
@@ -11,12 +10,10 @@
 }
 
 .App-header {
-  background-color:rgb(54, 88, 122);
   display: flex;
   align-items: center;
   justify-content: space-around;
     font-size: calc(10px + 2vmin);
-  color: aliceblue;
 }
 
 
@@ -50,7 +47,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: rgb(12, 12, 136);
   font-size: larger;
   margin: 3%;
 }
@@ -73,6 +69,5 @@
 }
 
 a{
-  color: aliceblue;
   text-decoration: none;
 }

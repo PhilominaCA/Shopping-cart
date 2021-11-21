@@ -11,12 +11,21 @@ import { useState } from 'react';
 import { useHistory } from "react-router-dom";
 import Button from '@material-ui/core/Button';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Paper from '@mui/material/Paper';
+import { useTheme } from '@emotion/react';
 
 function App() {
   const[cartvals,setCartvals]=useState([]);
   const hist = useHistory();
-
+  const theme = createTheme({
+    palette: {
+      type: "dark",
+    },
+  });
+const themes = useTheme();
   return (
+    <ThemeProvider theme={themes}>
     <div className="App">
      <header className="App-header">
      <h5> DRIZZLE STORE</h5>  
@@ -24,7 +33,6 @@ function App() {
         <Link to="/products">All Products</Link>
         <Button variant="outlined" color="inherit" onClick={()=> hist.push("/cart")}><ShoppingCartIcon/> Cart</Button>
       </header>
-   
       <div>
         <Switch>
         <Route exact path="/home">
@@ -42,6 +50,7 @@ function App() {
         </Switch>
         </div>
     </div>
+    </ThemeProvider>
   );
 }
 
