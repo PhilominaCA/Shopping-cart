@@ -1,7 +1,6 @@
 import { Items } from './Items';
 import { itemList } from './itemList';
 import Button from '@material-ui/core/Button';
-import { useState } from 'react';
 
 export function Products({cartvals,setCartvals,items,setItems}) {
   return (<div className="item-list">
@@ -14,7 +13,8 @@ export function Products({cartvals,setCartvals,items,setItems}) {
         setItems(itemCopy); 
          const selectedItem =  itemList.filter((item,indx)=>( indx===index));
         setCartvals([...cartvals,selectedItem]);
-       }}>Add to Cart </Button> : <Button size="large" color="primary" disabled>Add to Cart</Button>
+       }}>Add to Cart </Button> : 
+       <Button size="large" color="primary" disabled>Add to Cart</Button>
     }/>))}
       </div>)
 }
