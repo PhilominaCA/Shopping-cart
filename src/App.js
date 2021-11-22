@@ -13,17 +13,17 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import 'react-slideshow-image/dist/styles.css'
 import ImageList from '@material-ui/core/ImageList';
 import ImageListItem from '@material-ui/core/ImageListItem';
-import ImageListItemBar from '@material-ui/core/ImageListItemBar';
+import AcUnitRoundedIcon from '@mui/icons-material/AcUnitRounded';
 
 function App() {
-  
+
   const [items,setItems]=useState(itemList);
   const[cartvals,setCartvals]=useState([]);
   const hist = useHistory();
   return (
     <div className="App">
      <header className="App-header">
-     <h5> DRIZZLE STORE</h5>  
+     <h4><AcUnitRoundedIcon fontSize="large"/> <p>DRIZZLE STORE</p></h4>  
       <Link to="/">Home</Link>      
         <Link to="/products">All Products</Link>
         <Button variant="outlined" color="inherit" onClick={()=> hist.push("/cart")}><ShoppingCartIcon/> Cart</Button>
@@ -87,21 +87,19 @@ export function Home()
   return (
     <div className="slide-container">
       <br/>
-            <h1 className="empty-cart">DRIZZLE STORE </h1>
+            <h2 className="empty-cart">Everything you need!!</h2>
             <hr/>
             <br/> <br/>
       <ImageList  cols={5}>
         {slideImages.map((item) => (
           <ImageListItem >
             <img src={item.url} alt="shopping" />
-            <ImageListItemBar
-              title={item.name} />
           </ImageListItem>
         ))}
       </ImageList>
       <br/> <br/>
 <hr/>
-      <h1 className="empty-cart"> Enjoy Shopping!!!</h1>
+      <h2 className="empty-cart"> Enjoy Shopping!!!</h2>
     </div>
   )
 }
