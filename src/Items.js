@@ -7,6 +7,7 @@ import Rating from '@material-ui/lab/Rating';
 export function Items({ photo, itemName, rating, discountRate, rate,addButton,deleteOp }) {
   const useStyles = makeStyles({
     root: {
+      background:"skyblue",
       maxWidth: 305,
       padding: 4,
     },
