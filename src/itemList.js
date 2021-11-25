@@ -40,7 +40,7 @@ export const itemList = [
     "inCart":0
   },
   {
-    "photo": "https://cdn.shopify.com/s/files/1/0530/0145/3717/products/DSC7231.jpg?v=1632127828",
+    "photo": "https://www.eatthis.com/wp-content/uploads/sites/4/2017/10/dark-chocolate-bar-squares.jpg",
     "itemName": "Dark Chocolate",
     "rating": 4,
     "discountRate": 10,
